@@ -1,7 +1,17 @@
 ## code to prepare `dxadata` dataset goes here
+library(tidyverse)
+
+# load raw data
+dxadata <- readr::read_csv2("data-raw/dxa_data.csv") 
+
+# load set/sex/include data
+sets <- readr::read_csv2("data-raw/oneThreeSetLeg.csv")
+
+dxadata <- dxadata %>%
+        inner_join(sets) %>%
+        dplyr::select(participant = subject,time = timepoint, multiple:include, age:BMC.whole) %>%
+        filter(participant != "FP10")
 
 
-download.file("https://www.dropbox.com/s/g2t97j8edqvvktn/tr003_dxa.csv?raw=1", 
-              destfile = "data-raw/dxa_data.csv")
 
-dxadata <- readr::read_csv("data-raw/dxa_data.csv")
+usethis::use_data(dxadata, overwrite = TRUE)
