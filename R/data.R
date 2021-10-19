@@ -122,5 +122,19 @@
 #' @references {Haun, C. T., et al. (2018). "Effects of Graded Whey Supplementation During Extreme-Volume Resistance Training." Front Nutr 5: 84.}
 "hypertrophy"
 
+#' Maximal strength test values from a resistance training study
+#'
+#' Data from Øfsteng et al. (2021)
+#'
+#' @format A data frame with 243 rows and 5 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{time}{Time-point of data collection, before (pre), mid-way (mid) or after (post) 14-weeks of resistance training}
+#'   \item{group}{Intervention group identification, 10RM or 30RM}
+#'   \item{exercise}{The exercise that was tested for 1RM, legpress, benchpress or bicepscurl}
+#'   \item{load}{The load lifted in 1RM test (kg)}
+#'   }
+#' @references {Øfsteng, S., et al. (2021). "Twenty-two weeks of high-load resistance training leads to greater increases in strength and performance than low-load training in a military environment}
+"tenthirty"
 
 
