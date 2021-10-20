@@ -66,6 +66,24 @@
 #' @references {Hammarström, D., et al. (2020). "Benefits of higher resistance-training volume are related to ribosome biogenesis." The Journal of Physiology 598(3): 543-565.}
 "dxadata"
 
+#' Strength test data from a training study investigating the effect of inter-session training volume
+#'
+#' Data from Hammarström et al. (2020)
+#'
+#' @format A data frame with 1404 rows and 7 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{sex}{female/male}
+#'   \item{time}{Time-point of data collection, before (pre), after one session (session1), 2, 5, 9 or 12 weeks (week2, week5, week9, post) of resistance training}
+#'   \item{sets}{Identification of inter-session training volume one (single) or three (multiple) sets per exercise per session .}
+#'   \item{leg}{Left (L) or right (R) leg used in training volume allocation }
+#'   \item{exercise}{Type of exercise. Isokinetic strength was tested in knee extension at 60, 120 and 240 degrees per sec (isok.60, isok.120, isok.240), isometric knee extension (isom) and as one repetition maximum in leg press and knee extension (legpress, legext)}
+#'   \item{load}{Load lifted in one repetition maximum (kg) or isometric/isokintic (N, N m) tests}
+#' }
+#' @references {Hammarström, D., et al. (2020). "Benefits of higher resistance-training volume are related to ribosome biogenesis." The Journal of Physiology 598(3): 543-565.}
+"strengthvolume"
+
+
 
 #' Body composition, strength and molecular data from a resistance training study
 #'
