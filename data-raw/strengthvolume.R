@@ -26,7 +26,7 @@ strengthvolume <- bind_rows(strengthtest, isokinetic) %>%
                                         values_to = "leg", 
                                         cols = multiple:single)) %>%
       #  filter(include == "incl") %>%
-        dplyr::select(participant = subject,sex,  time = timepoint, sets, leg, exercise, load) %>%
+        dplyr::select(participant = subject,sex,include,  time = timepoint, sets, leg, exercise, load) %>%
         filter(participant != "FP10")
 
 

@@ -4,18 +4,11 @@
 
 library(tidyverse)
 
-hypertrophy <- readr::read_csv("./data-raw/hypertrophy.csv")
-
-hypertrophy2 <- readr::read_csv("./data-raw/hypertrophy2.csv")
 
 
-
-# dplyr::glimpse(hypertrophy)
-# dplyr::glimpse(hypertrophy2)
-
-
-hypertrophy2 <- hypertrophy2 %>%
+hypertrophy2 <- readr::read_csv("./data-raw/hypertrophy2.csv") %>%
         select(PARTICIPANT = SUB_ID, 
+               GROUP = GROUP_STRING,
                AGE, 
                HEIGHT, 
                TRAINING_AGE, 
@@ -86,15 +79,15 @@ hypertrophy2 <- hypertrophy2 %>%
                PPT_AVG_T3 = PPT_AVG_3)
                
                
-hypertrophy <- hypertrophy %>%
-        select(PARTICIPANT = SUB_ID, 
+hypertrophy1 <- readr::read_csv("./data-raw/hypertrophy.csv") %>%
+        select(PARTICIPANT = SUB_ID...1, 
                AGE, 
                BODYMASS_T1 = T1_BODY_MASS, 
                BODYMASS_T3 = T3_BODY_MASS,
                SQUAT_3RM = Squat_3RM_kg, 
                SQUAT_VOLUME,
-               GROUP = GROUP, 
-               CLUSTER = CLUSTER, 
+               GROUP = GROUP...2, 
+               CLUSTER = CLUSTER...3, 
                PERCENT_TYPE_I_T1, 
                PERCENT_TYPE_II_T1,
                FAST_CSA_T1, 
@@ -193,8 +186,20 @@ hypertrophy <- hypertrophy %>%
                
                DXA_FM_T1,
                DXA_FM_T2,
-               DXA_FM_T3) %>%
-        inner_join(hypertrophy2) 
+               DXA_FM_T3) 
+        
+
+
+
+hypertrophy <- hypertrophy2 %>%
+        full_join(hypertrophy1) 
+
+
+hypertrophy %>%
+        group_by(GROUP) %>%
+        summarise(n = n())
+
+
                
 usethis::use_data(hypertrophy, overwrite = TRUE)
 
