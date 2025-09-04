@@ -1,3 +1,50 @@
+#' Protein synthesis and Total RNA concentration in rat skeletal muscle
+#'
+#' Data from Millward (1973) to describe the relationship between Total RNA and 
+#' protein synthesis in rat skeletal muscle. Protein synthesis was measured 
+#' using constant intravenous infusion of 14C-labelled tyrosine in rats. Rats 
+#' where either fed a standard diet (10\% protein), starved, or refed after 
+#' starvation with a protein-free diet or control diet. In the data set, two
+#' groups are identified where A represent rats on control diet or refed animals
+#' and B represent starved/fasted animals and animals refed with protein-free
+#' diet.   
+#'
+#' @format A data frame with 52 rows and 3 variables:
+#' \describe{
+#'  \item{group}{group identification, A or B}
+#'  \item{RNA}{Total RNA concentration in rat skeletal muscle, microgram per milligram protein}
+#'  \item{protein_synthesis}{Fractional protein synthesis rate in rat skeletal muscle, Ks day-1}
+#' }
+#' 
+#' @references {Millward, D. J., P. J. Garlick, W. P. T. James, D. O. Nnanyelugo, og J. S. Ryatt. 1973. «Relationship between Protein Synthesis and RNA Content in Skeletal Muscle». Nature 241:204. doi: 10.1038/241204a0.}
+"millward"
+
+#' Increase in Protein synthesis and muscle wet weight in rat skeletal muscle
+#' 
+#' Data from Goldberg (1968). Muscle growth and incorporation of labelled leucin 
+#' into protein in rat skeletal muscle (plantaris and soleus) after tenotomy of 
+#' the gastrocnemius insertions into the Achilles tendon. Values are presented as
+#' percentage of the contra-lateral sham-operated limb.
+#'
+#' @format A data frame with 42 rows and 3 variables:
+#' \describe{
+#'  \item{muscle.ww}{Muscle wet weight, expressed as a percentage of 
+#'  the contra-lateral sham-operated limb}
+#'  \item{leucin.incorp}{Protein synthesis measured as incorporation of labelled
+#'   leucin, expressed as a percentage of the contra-lateral sham-operated limb}
+#'  \item{muscle}{Identification of muscle, plantaris or soleus}
+#'  }
+#'  
+#'  @references {Goldberg, Alfred L. 1968. “Protein Synthesis during Work-Induced
+#'   Growth of Skeletal Muscle.” The Journal of Cell Biology 36(3):653–58}
+"goldberg"
+
+
+
+
+
+
+
 #' Physiological variables from a cycling training study.
 #'
 #' Part of the data from Sylta et al. (2016) describing 20 participants conducting a cycling training study. 
