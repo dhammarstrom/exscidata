@@ -8,7 +8,7 @@ Maintainer: Daniel Hammarström <daniel.hammarstrom@inn.no>
 Description: This package contains curated data sets from exercise and sport science studies and measurements.
 License: What license is it under?
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5)
 RoxygenNote: 7.3.2
 Encoding: UTF-8
 Roxygen: list(markdown = FALSE)

@@ -203,4 +203,20 @@
 #' @references {Øfsteng, S., et al. (2021). "Twenty-two weeks of high-load resistance training leads to greater increases in strength and performance than low-load training in a military environment}
 "tenthirty"
 
-
+#' Results from the Boston Marathon
+#'
+#' Data retrieved from the Boston-Marathon-Data-Project
+#' https://github.com/adrian3/Boston-Marathon-Data-Project 
+#'
+#' @format A data frame with 649378 rows and 7 variables:
+#' \describe{
+#'   \item{display_name}{Runner name}
+#'   \item{age}{Age in years}
+#'   \item{gender}{Male (M) and female (F)}
+#'   \item{seconds}{Time in seconds to complete the marathon}
+#'   \item{overall}{Overall place}
+#'   \item{gender_result}{Place in gender category}
+#'   \item{year}{Year of the race}
+#'   }
+#' @references {Adrian Hanft (2019) https://tread1st.com/boston.html}
+"boston"
