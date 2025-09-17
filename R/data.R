@@ -220,3 +220,28 @@
 #'   }
 #' @references {Adrian Hanft (2019) https://tread1st.com/boston.html}
 "boston"
+
+#' Results from the Boston Marathon
+#' 
+#' The results from 2000 are aggregated for the top 100 in each age category
+#' using several descriptive statistics. 
+#'
+#' Data retrieved from the Boston-Marathon-Data-Project
+#' https://github.com/adrian3/Boston-Marathon-Data-Project 
+#'
+#' @format A data frame with 649378 rows and 7 variables:
+#' \describe{
+#'   \item{gender}{Male (M) and female (F)}
+#'   \item{year}{Year of the race}
+#'   \item{age_group}{Age group}
+#'   \item{mean_seconds}{Time in seconds averaged over age group, gender and year}
+#'   \item{sd_seconds}{Time in seconds SD over age group, gender and year}
+#'   \item{min_seconds}{Time in seconds MIN over age group, gender and year}
+#'   \item{max_seconds}{Time in seconds MAX over age group, gender and year}
+#'   \item{n}{Number of observations in each age group, gender and year}
+#'   }
+#' @references {Adrian Hanft (2019) https://tread1st.com/boston.html}
+"boston_aggregated"
+
+
+
