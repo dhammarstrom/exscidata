@@ -16,10 +16,10 @@ A data frame with 52 rows and 3 variables:
 millward
 }
 \description{
-Data from Millward (1973) to describe the relationship between Total RNA and 
-protein synthesis in rat skeletal muscle. Protein synthesis was measured 
-using constant intravenous infusion of 14C-labelled tyrosine in rats. Rats 
-where either fed a standard diet (10\% protein), starved, or refed after 
+Data from Millward (1973) to describe the relationship between Total RNA and
+protein synthesis in rat skeletal muscle. Protein synthesis was measured
+using constant intravenous infusion of 14C-labelled tyrosine in rats. Rats
+where either fed a standard diet (10\% protein), starved, or refed after
 starvation with a protein-free diet or control diet. In the data set, two
 groups are identified where A represent rats on control diet or refed animals
 and B represent starved/fasted animals and animals refed with protein-free

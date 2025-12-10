@@ -33,8 +33,8 @@ A data frame with 800 rows and 19 variables:
 injury
 }
 \description{
-The data set contains 800 Chinese university football 
-players characteristics and injury occurrence during 
+The data set contains 800 Chinese university football
+players characteristics and injury occurrence during
 the next season.
 }
 \details{
@@ -42,7 +42,7 @@ Data retreived from Kaggle. Data licensed under CC0: Public Domain.
 DOI: https://doi.org/10.34740/kaggle/dsv/12653694
 }
 \references{
-{ChunHong Yuan (2025) University Football Injury 
+{ChunHong Yuan (2025) University Football Injury
 Prediction Dataset. DOI: 10.34740/KAGGLE/DSV/12653694. Publisher: Kaggle}
 }
 \keyword{datasets}
