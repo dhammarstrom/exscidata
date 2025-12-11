@@ -1,3 +1,21 @@
+#' Hemoglobin mass in cyclists
+#'
+#' Data from Rønnestad (2021). A group of cyclists trained for five weeks
+#' in a heat chamber (heat group) or in control conditions (con group).
+#'
+#' @format A data frame with 46 rows and 4 variables:
+#' \describe{
+#'  \item{id}{Participant identification}
+#'  \item{group}{Grouping, experimental group (heat) and control group (con)}
+#'  \item{time}{Time point, pre and post-intervention}
+#'  \item{hb}{Hbmass (g)}
+
+#' }
+#'
+#' @references {Rønnestad, B. R. et al. Five weeks of heat training increases haemoglobin mass in elite cyclists. Experimental Physiology 106, 316–327 (2021).}
+"hbmass"
+
+
 #' Hemoglobin mass in cross coutry skiers - Effects of heat training
 #'
 #' Data from Rønnestad (2022) where a group of cross country skiers completed either
