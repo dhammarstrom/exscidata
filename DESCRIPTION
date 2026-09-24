@@ -2,7 +2,7 @@ Package: exscidata
 Type: Package
 Title: Curated data sets from exercise and sport sciences 
 Version: 0.08
-Date: 2025-10-14
+Date: 2026-09-24
 Author: Daniel Hammarström
 Maintainer: Daniel Hammarström <daniel.hammarstrom@inn.no>
 Description: This package contains curated data sets from exercise and sport science studies and measurements.
