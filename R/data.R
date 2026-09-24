@@ -1,3 +1,23 @@
+#' Fiber type area and relative peak torque in athletes and sedentary men.
+#'
+#' Data from Thorstensson et al. (1977). Fiber type areas were estimated from
+#' biopsies sampled from m. vastus lateralis. Strength was recorded as the
+#' isokinetic torque at 180 degrees per second relative to the torque recorded
+#' in a maximal maximal voluntary isometric contraction (MVC).
+#'
+#' @format A data frame with 39 rows and 4 variables:
+#' \describe{
+#'  \item{id}{Participant identification}
+#'  \item{group}{Grouping, orienteers, race-walkers, sprinters, downhill_skiers, sedentary men}
+#'  \item{ft_area_pct}{Fast twitch fiber relative are (percentage)}
+#'  \item{peak_torque_pct_mvc}{Isokinetic peak torque (180 deg/sec) as a percentage of MVC}
+
+#' }
+#'
+#' @references {Thorstensson, A., L. Larsson, P. Tesch, and J. Karlsson. 1977. “Muscle Strength and Fiber Composition in Athletes and Sedentary Men.” Med Sci Sports 9(1):26–30.}
+"thorstensson"
+
+
 #' Hemoglobin mass in cyclists
 #'
 #' Data from Rønnestad (2021). A group of cyclists trained for five weeks

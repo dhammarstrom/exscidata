@@ -1,7 +1,7 @@
 Package: exscidata
 Type: Package
 Title: Curated data sets from exercise and sport sciences 
-Version: 0.07
+Version: 0.08
 Date: 2025-10-14
 Author: Daniel Hammarström
 Maintainer: Daniel Hammarström <daniel.hammarstrom@inn.no>
@@ -9,7 +9,7 @@ Description: This package contains curated data sets from exercise and sport sci
 License: CC0
 Depends: 
     R (>= 3.5)
-RoxygenNote: 7.3.3
 Encoding: UTF-8
 Roxygen: list(markdown = FALSE)
 LazyData: true
+Config/roxygen2/version: 8.0.0

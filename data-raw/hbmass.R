@@ -64,4 +64,9 @@ hbmass <- data.frame(
   mutate(group = gsub("[0-9]", "", id)) |>
   select(id, group, time, hb)
 
+
+# Write a csv file
+write.csv(hbmass, "hbmass.csv", row.names = FALSE)
+
+
 usethis::use_data(hbmass, overwrite = TRUE)
